@@ -2,14 +2,18 @@
 
 class Dog 
 
-  def name= "dogs_name"
-    this_dogs_name = dogs_name
+  def name= (dogs_name)
+    @this_dogs_name = dogs_name
   end
   
+  def name
+    @this_dogs_name
+  end
+    
   def bark
     puts "wood!"
   end
 end
 
-fido.new 
-fido.name = Fido 
+fido = Dog.new
+fido.name = "Fido" 
